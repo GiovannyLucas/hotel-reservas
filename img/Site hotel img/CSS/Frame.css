@@ -1,0 +1,385 @@
+/* Frame */
+
+position: relative;
+width: 1440px;
+height: 6282px;
+
+background: #131212;
+
+
+/* Rectangle 5 */
+
+position: absolute;
+width: 1442px;
+height: 5626px;
+left: -2px;
+top: 656px;
+
+background: #FFFFFF;
+
+
+/* Rectangle 3 */
+
+position: absolute;
+width: 1440px;
+height: 506px;
+left: 0px;
+top: 192px;
+
+background: #FFFFFF;
+
+
+/* promenade-link-stay-suite-luxo-casal-6 */
+
+position: absolute;
+width: 1440px;
+height: 504px;
+left: 0px;
+top: 190px;
+
+background: url(promenade-link-stay-suite-luxo-casal-6.jpg);
+
+
+/* Rectangle */
+
+position: absolute;
+width: 1440px;
+height: 120px;
+left: 0px;
+top: 70px;
+
+background: #055D83;
+
+
+/* Rectangle 2 */
+
+position: absolute;
+width: 212px;
+left: 58px;
+top: 0%;
+bottom: 96.15%;
+
+background: #066A95;
+mix-blend-mode: normal;
+
+
+/* Rectangle 4 */
+
+position: absolute;
+width: 1440px;
+height: 154px;
+left: 0px;
+top: 544px;
+
+background: rgba(97, 96, 96, 0.45);
+backdrop-filter: blur(4px);
+/* Note: backdrop-filter has minimal browser support */
+
+
+/* Rectangle 9 */
+
+position: absolute;
+width: 1462px;
+height: 270px;
+left: -12px;
+top: 993px;
+
+background: #045E91;
+
+
+/* Acomodações */
+
+position: absolute;
+width: 434px;
+height: 93px;
+left: 502px;
+top: 1035px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+line-height: normal;
+font-size: 64px;
+text-align: center;
+
+color: #FBF3F3;
+
+
+
+/* Component */
+
+position: absolute;
+width: 1548px;
+height: 867px;
+left: -44px;
+top: 5606px;
+
+
+
+/* Rectangle 6 */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 7.61%;
+
+background: #10BDA8;
+
+
+/* Rectangle 6.1 */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 7.61%;
+bottom: 0%;
+
+background: #045E91;
+
+
+/* logo_1 */
+
+position: absolute;
+left: 18.54%;
+right: 75%;
+top: 53.86%;
+bottom: 34.6%;
+
+background: url(logo_1.png);
+
+
+/* logo_3 */
+
+position: absolute;
+left: 39.53%;
+right: 41.09%;
+top: 50.4%;
+bottom: 31.14%;
+
+background: url(logo_3.png);
+
+
+/* logo_2 */
+
+position: absolute;
+left: 67.25%;
+right: 13.37%;
+top: 50.4%;
+bottom: 31.14%;
+
+background: url(logo_2.png);
+
+
+/* logo */
+
+position: absolute;
+width: 262px;
+height: 242px;
+left: 58px;
+top: 0px;
+
+background: url(logo.png);
+
+
+/* Rectangle 8 */
+
+position: absolute;
+width: 314px;
+height: 312px;
+left: 214px;
+top: 1128px;
+
+background: #10BDA8;
+
+
+/* Rectangle 8.1 */
+
+position: absolute;
+width: 314px;
+height: 312px;
+left: 562px;
+top: 1128px;
+
+background: #10BDA8;
+
+
+/* promenade-link-stay-suite-luxo-casal-7 */
+
+position: absolute;
+width: 314px;
+height: 312px;
+left: 214px;
+top: 1128px;
+
+background: url(promenade-link-stay-suite-luxo-casal-7.jpg);
+border-radius: 107px;
+
+
+/* promenade-link-stay-suite-junior-1 */
+
+position: absolute;
+width: 314px;
+height: 312px;
+left: 562px;
+top: 1128px;
+
+background: url(promenade-link-stay-suite-junior-1.jpg);
+border-radius: 86px;
+
+
+/* Rectangle 8.2 */
+
+position: absolute;
+width: 314px;
+height: 312px;
+left: 909px;
+top: 1128px;
+
+background: #10BDA8;
+
+
+/* promenade-link-stay-suite-luxo-solteiro-1 */
+
+position: absolute;
+width: 314px;
+height: 310px;
+left: 909px;
+top: 1130px;
+
+background: url(promenade-link-stay-suite-luxo-solteiro-1.jpg);
+border-radius: 89px;
+
+
+/* Frame */
+
+position: absolute;
+width: 1440px;
+height: 277px;
+left: 0px;
+top: 1884px;
+
+background: #045E91;
+
+
+/* EVENTOS */
+
+position: absolute;
+width: 278px;
+height: 75px;
+left: 581px;
+top: 63px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+line-height: normal;
+font-size: 64px;
+text-align: center;
+
+color: #FFFFFF;
+
+
+
+/* eventos-salao01 */
+
+position: absolute;
+width: 1170px;
+height: 442px;
+left: 134px;
+top: 2035px;
+
+background: url(eventos-salao01.jpg);
+
+
+/* Frame 2 */
+
+position: absolute;
+width: 1440px;
+height: 326px;
+left: 0px;
+top: 3005px;
+
+background: #045E91;
+
+
+/* ESTRUTURA */
+
+position: absolute;
+width: 355px;
+height: 105px;
+left: 542px;
+top: 58px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+line-height: normal;
+font-size: 64px;
+text-align: center;
+
+color: #FFFFFF;
+
+
+
+/* Frame 2.1 */
+
+position: absolute;
+width: 1440px;
+height: 326px;
+left: 0px;
+top: 4248px;
+
+background: #045E91;
+
+
+/* LOCALIZAÇÂO */
+
+position: absolute;
+width: 419px;
+height: 82px;
+left: 510px;
+top: 15px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+line-height: normal;
+font-size: 64px;
+text-align: center;
+
+color: #FFFFFF;
+
+
+
+/* promenade-link-stay-academia-1 */
+
+position: absolute;
+width: 396px;
+height: 389px;
+left: 46px;
+top: 3168px;
+
+background: url(promenade-link-stay-academia-1.jpg);
+
+
+/* promenade-link-stay-fachada-3 */
+
+position: absolute;
+width: 395px;
+height: 389px;
+left: 514px;
+top: 3168px;
+
+background: url(promenade-link-stay-fachada-3.jpg);
+
+
+/* promenade-link-stay-restaurante-2 */
+
+position: absolute;
+width: 395px;
+height: 389px;
+left: 997px;
+top: 3168px;
+
+background: url(promenade-link-stay-restaurante-2.jpg);
