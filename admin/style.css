@@ -1,0 +1,156 @@
+ * {margin: 0 auto; padding: 0;}
+
+body {
+	font-family: arial;
+	background-color: #FF4500;
+}
+
+.container {
+	display: flex;
+	flex:1;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: nowrap;
+	height: 100%;
+}
+
+.form-control {
+	border: 0px solid black;
+	padding: 50px 90px;
+	border-radius: 5px;
+}
+
+.form-group {
+	position: relative;
+}
+
+.estilo-input {
+	transition: 0.5s;
+	filter: brightness(0.8);
+	background-color: white;
+	border: 0px solid gray;
+	border-radius: 5px;
+	width: 60%;
+	height: 35px;
+}
+
+.estilo-input:focus {
+	transition: 0.5s;
+	background-color: white;
+	border: 0px solid blue;
+	border-radius: 5px;
+	width: 100%;
+	height: 35px;
+}
+
+
+.botao-success {
+	position: absolute;
+	background-color: #00FF00;
+	color: white;
+	border-radius: 5px;
+	padding: 10px 20px;
+	border: 0px solid black;
+	margin-left: 15%;	
+}
+
+.botao-success:hover {
+	position: absolute;
+	transition: 0.09s;
+	background-color: #00FF00;
+	color: white;
+	border-radius: 5px;
+	padding: 10px 20px;
+	border: 0px solid black;
+	cursor: pointer;
+	box-shadow: 2px 2px #888888;	
+}
+
+.botao-warning {
+	position: absolute;
+	background-color: #FF8C00;
+	color: white;
+	border-radius: 5px;
+	padding: 10px 20px;
+	border: 0px solid black;
+	margin-left: 15%;	
+}
+
+.botao-warning:hover {
+	position: absolute;
+	transition: 0.09s;
+	background-color: #FF8C00;
+	color: white;
+	border-radius: 5px;
+	padding: 10px 20px;
+	border: 0px solid black;
+	cursor: pointer;
+	box-shadow: 2px 2px #888888;	
+}
+
+.botao-danger {
+	position: absolute;
+	background-color: #FF0000;
+	color: white;
+	border-radius: 5px;
+	padding: 10px 20px;
+	border: 0px solid black;
+	margin-left: 15%;	
+}
+
+.botao-danger:hover {
+	position: absolute;
+	transition: 0.09s;
+	background-color: #FF0000;
+	color: white;
+	border-radius: 5px;
+	padding: 10px 20px;
+	border: 0px solid black;
+	cursor: pointer;
+	box-shadow: 2px 2px #888888;	
+}
+
+.botao-info {
+	position: absolute;
+	background-color: #6495ED;
+	color: white;
+	border-radius: 5px;
+	padding: 10px 20px;
+	border: 0px solid black;
+	margin-left: 15%;	
+}
+
+.botao-info:hover {
+	position: absolute;
+	transition: 0.09s;
+	background-color: #6495ED;
+	color: white;
+	border-radius: 5px;
+	padding: 10px 20px;
+	border: 0px solid black;
+	cursor: pointer;
+	box-shadow: 2px 2px #888888;	
+}
+
+.botao-default {
+	position: absolute;
+	background-color: #0000FF;
+	color: white;
+	border-radius: 5px;
+	padding: 10px 20px;
+	border: 0px solid black;	
+	margin-left: 15%;
+}
+
+.botao-default:hover {
+	position: absolute;
+	transition: 0.09s;
+	background-color: #0000FF;
+	color: white;
+	border-radius: 5px;
+	padding: 10px 20px;
+	border: 0px solid black;
+	cursor: pointer;
+	box-shadow: 2px 2px #888888;	
+}

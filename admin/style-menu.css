@@ -1,0 +1,112 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Quicksand;
+	background: #ccc
+}
+
+header {
+	position: fixed;
+	top: 10;
+	left: 0;
+	padding: 0 100px;
+	background: transparent;
+	width: 100%;
+	box-sizing: border-box; 
+	z-index: 99;
+}
+
+header .logo {
+	color: #fff;
+	height: 50px;
+	line-height: 50px;
+	font-size: 24px;
+	float: left;
+	font-weight: bold;
+}
+
+header nav {
+	float: right;
+}
+
+header nav ul {
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+
+header nav ul li {
+	list-style: none;
+}
+
+header nav ul li a {
+	height: 50px;
+	line-height: 50px;
+	padding: 0 20px;
+	color: #fff;
+	text-decoration: none;
+	display: block;
+	text-transform: uppercase;
+	font-family: Quicksand;
+}
+
+header nav ul li a:hover,
+header nav ul li a.active
+
+ {
+	color: #fff;
+	background: rgba(102,204,102,1);
+}
+
+.menu-toggle {
+	color: #fff;
+	float: left;
+	line-height: 50px;
+	font-size: 24px;
+	cursor: pointer;
+	display: none;
+}
+
+header.blue {
+	background: rgba(4,93,144,0.7);
+}
+
+header.top {
+	top: 0;
+	transition: .3s;
+}
+
+@media (max-width: 991px){
+	header {
+		padding: 0 20px;
+	}
+
+	.menu-toggle {
+		display: block;
+		float: right;
+		padding: 10px;
+	}
+
+	header nav {
+		position: absolute;
+		width: 100%;
+		height: calc(100vh - 50px);
+		background: #333;
+		top: 50px;
+		left: -100%;
+		transition: 0.5s;
+	}
+
+	header nav.active {
+		left: 0;
+	}
+
+	header nav ul {
+		display: block;
+		text-align: center;
+	}
+
+	header nav ul li a {
+		border-bottom: 1px solid rgba(0,0,0,.2);
+	}
+}
