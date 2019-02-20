@@ -26,13 +26,19 @@
 	<script type="text/javascript">
 		new WOW().init();
 	</script>
-</head>	
 
+	<style type="text/css">
+		.sec1 {
+			width: 100%;
+			height: 90vh;
+		}
+	</style>
+</head>	
 		<section class="sec1">
 			<div id="slideShow">
 				<img src="img/slideShow/1.jpg" alt="Primeira Foto" />
 				<img src="img/slideShow/2.jpg" alt="Segunda Foto" />
-				<img src="img/slideShow/3.jpg" alt="Terceira Foto" />
+				<img src="img/slideShow/3.jpg" alt="Terceira Foto"/>
 			</div>
 		</section>
 
@@ -44,9 +50,23 @@
 					<p class="legenda-g wow jackInTheBox" data-wow-delay="1s">Nossas acomodações</p>
 				</div>
 
-				<img src="img/slideShow/1.jpg" class="img-barra wow zoomInDown" alt="Primeira Foto" />
-				<img src="img/slideShow/1.jpg" class="img-barra wow zoomInDown" alt="Primeira Foto" class="img-barra" />
-				<img src="img/slideShow/1.jpg" class="img-barra wow zoomInDown" alt="Primeira Foto" class="img-barra" />
+				<?php 
+					include('userDAO.php');
+
+					$userDAO = new userDAO();
+		
+					$user = $userDAO->ListaQuartosIndex();
+					
+						for ($i=0; $i < count($user); $i++) { 
+							echo "
+							
+							<a href='quarto-detail.php?id=".$user[$i]['id']."'>
+								<img class='img-barra wow zoomInDown' src='admin/img_upload/".$user[$i]['img']."'></a>
+								
+								
+							";
+						}
+				?>
 
 			</div>
 
