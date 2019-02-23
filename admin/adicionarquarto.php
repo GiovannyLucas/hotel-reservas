@@ -8,7 +8,6 @@
         align-items: center;
         justify-content: center;
     }
-    
     h1, input {
         font-family: Arial;
     }
