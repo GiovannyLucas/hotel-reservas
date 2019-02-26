@@ -12,10 +12,6 @@
 		}
 	</script>
 
-	<!-- <script   src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"
-			  integrity="sha256-eGE6blurk5sHj+rmkfsGYeKyZx3M4bG+ZlFyA7Kns7E="
-			  crossorigin="anonymous"></script>
-	 -->
 	<script type="text/javascript" src="style/js/script.js"></script>
 	<script type="text/javascript">
 		$(window).on('scroll', function(){
@@ -33,20 +29,32 @@
 	
 	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
+	<style type="text/css">
+		.img-logo:hover {
+			transform: scale(1.2);
+			transition: .3s;
+			cursor: pointer;
+		}
+		.img-logo {
+			transform: scale(1);
+			transition: .3s;
+			cursor: pointer;
+		}
+	</style>
 <body>
 
 	<header>
 		<div class="logo">
-				<img onclick="Top()" src="img/Site hotel img/logos/c6fb5b64c52ff8fe978152ba26409d19.png" style="height: 50px">
+				<img onclick="Top()" src="img/Site hotel img/logos/c6fb5b64c52ff8fe978152ba26409d19.png" class="img-logo" style="height: 50px">
 		</div>
 
 		<nav class="active">
 			<ul>
 				<li><a href="index.php">Home</a></li>
 				<li><a href="acomodacoes.php">Acomodações</a></li>
-				<li><a href="#">Pacotes</a></li>
-				<li><a href="#">Sobre</a></li>
-				<li><a href="#" class="active">Reservar</a></li>
+				<li><a href="ambientes.php">Ambientes</a></li>
+				<li><a href="#sobre">Sobre</a></li>
+				<li><a class="active">Reservar</a></li>
 			</ul>
 		</nav>
 		<div class="menu-toggle"><i class="fa fa-bars" aria-hidden="true"></i></div>

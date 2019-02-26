@@ -79,12 +79,12 @@
 			<div class="barra-azul">
 				
 				<div class="letra">
-					<p class="legenda-g wow jackInTheBox" data-wow-delay="1s">Conheça nossos pacotes</p>
+					<p class="legenda-g wow jackInTheBox" data-wow-delay="1s">Veja nossos ambientes de lazer</p>
 				</div>
 
-				<img src="img/slideShow/1.jpg" class="img-barra wow zoomInDown" alt="Primeira Foto" />
-				<img src="img/slideShow/1.jpg" class="img-barra wow zoomInDown" alt="Primeira Foto" class="img-barra" />
-				<img src="img/slideShow/1.jpg" class="img-barra wow zoomInDown" alt="Primeira Foto" class="img-barra" />
+				<img src="img/a1.jpg" class="img-barra wow zoomInDown"/>
+				<img src="img/a2.jpg" class="img-barra wow zoomInDown"/>
+				<img src="img/a3.jpg" class="img-barra wow zoomInDown"/>
 
 			</div>
 

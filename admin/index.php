@@ -5,16 +5,16 @@
 		<link rel="stylesheet" type="text/css" href="style.css">
 		<link rel="stylesheet" href="css/animate.css">
 		<script src="js/wow.min.js"></script>
-              	<script>
-              		new WOW().init();
-              	</script>
+      	<script>
+      		new WOW().init();
+      	</script>
 		<title>Área ADM - Landstar Hotel</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head>
 	<body>
 		<div class="container">
 			<div class="wow fadeInUp" data-wow-delay=".2s" style="padding: 15px 0px;" class="form-group">
-				<h2>ÁREA DE ADMINISTRAÇÃO</h2>
+				<h2>ÁREA ADMINISTRATIVA!</h2>
 			</div>
 			<div>
 				<form  method="post">
@@ -32,9 +32,9 @@
 						</div>	
 						<br>
 						<div class="form-group">
+							
 							<button style="width: 70%;" class="botao-success" type="submit">ENTRAR</button>	
-							<br><br><br>
-							<button style="width: 70%;" class="botao-danger" type="button">SAIR</button>
+							
 						</div>			
 					</div>
 				</form>
@@ -46,7 +46,8 @@
 					session_start();
 
 
-					require('UsuarioDAO.php');
+					require('DAO/UsuarioDAO.php');
+					require('Models/Usuario.php');
 
 					$usuarioDAO = new UsuarioDAO();
 					$usuario = new Usuario();
@@ -54,7 +55,7 @@
 					$usuario->setUsuario($_POST['user']);
 					$usuario->setSenha($_POST['senha']);
 
-					$_SESSION['admin'] = "admin";
+					$_SESSION['admin'] = $_POST['user'];
 
 					$usuarioDAO->Logar($usuario);
 				}

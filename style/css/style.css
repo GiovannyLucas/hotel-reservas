@@ -139,7 +139,7 @@ img.acom {
 .conteudo-info {
 	display: inline-block;
 	width: 300px;
-	height: 50vh;
+	height: 70vh;
 	background: tomato;
 }
 
@@ -176,7 +176,7 @@ img.acom {
 		display: inline-block;
 		width: 300px;
 		height: 50vh;
-		background: red;
+		background: tomato;
 		transition: .3s;
 	}
 }
@@ -223,8 +223,8 @@ img.acom {
 	.conteudo-info {
 		display: inline-block;
 		width: 300px;
-		height: 50vh;
-		background: red;
+		height: 70vh;
+		background: tomato;
 		transition: .3s;
 	}
 
@@ -258,8 +258,8 @@ img.acom {
 	.conteudo-info {
 		display: inline-block;
 		width: 300px;
-		height: 50vh;
-		background: red;
+		height: 70vh;
+		background: tomato;
 		transition: .3s;
 	}
 }
@@ -307,8 +307,8 @@ img.acom {
 	.conteudo-info {
 		display: inline-block;
 		width: 200px;
-		height: 50vh;
-		background: red;
+		height: 70vh;
+		background: tomato;
 		transition: .3s;
 	}
 }

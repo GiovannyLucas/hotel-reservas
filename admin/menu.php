@@ -1,3 +1,5 @@
+	<title>Landstar hotels - Área ADM</title>
+
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="icon" type="image/x-icon" href="../img/Site hotel img/logos/icon.png">
 	<link rel="stylesheet" href="style-menu.css">
@@ -12,10 +14,10 @@
 		}
 	</script>
 
-	<!-- <script   src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"
+	<script   src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"
 			  integrity="sha256-eGE6blurk5sHj+rmkfsGYeKyZx3M4bG+ZlFyA7Kns7E="
 			  crossorigin="anonymous"></script>
-	 -->
+	
 	<script type="text/javascript" src="style/js/script.js"></script>
 	<script type="text/javascript">
 		$(window).on('scroll', function(){
@@ -33,19 +35,36 @@
 	
 	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
+	<style type="text/css">
+		.img-logo:hover {
+			transform: scale(1.2);
+			transition: .3s;
+		}
+		.img-logo {
+			transform: scale(1);
+			transition: .3s;
+		}
+
+		a {
+			text-decoration: none;
+			color: white;
+		}
+	</style>
+
 <body>
 
 	<header>
 		<div class="logo">
-				<img onclick="Top()" src="../img/Site hotel img/logos/c6fb5b64c52ff8fe978152ba26409d19.png" style="height: 50px">
+				<img onclick="Top()" src="../img/Site hotel img/logos/c6fb5b64c52ff8fe978152ba26409d19.png" class="img-logo" style="height: 50px">
 		</div>
 
 		<nav class="active">
 			<ul>
 				<li><a href="admin.php" class="active">Home</a></li>
-				<li><a href="adicionarquarto.php">Adicionar quarto</a></li>
-				<li><a href="?opc=verr">Ver reservas</a></li>
-				<li><a href="?opc=verc">Ver clientes</a></li>
+				<li><a href="opcoes-quarto.php">Quarto <i class="fa fa-bed"></i></a></li>
+				<li><a href="opcoes-reserva.php">Reservas <i class="fa fa-address-book"></i></a></li>
+				<li><a href="cadastrar-admin.php">Cadastrar ADM <i class="fa fa-plus"></i></a></li>
+				<li><a href="?sair">Logout <i class="fa fa-sign-out"></i></a></li>
 			</ul>
 		</nav>
 		<div class="menu-toggle"><i class="fa fa-bars" aria-hidden="true"></i></div>
@@ -60,5 +79,15 @@
 	</script>
 
 	<?php
+		session_start();
 
+		if (!isset($_SESSION['admin'])) {
+			header('location:index.php');
+		}
+
+		if (isset($_GET['sair'])) {
+			unset($_SESSION['admin']);
+			session_destroy();
+			header('location:index.php');
+		}
 	?>
