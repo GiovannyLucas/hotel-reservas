@@ -24,6 +24,13 @@
 			height: 40vh;
 			border-radius: 20px;
 		}
+		div.content-acom img:hover {
+			transform: scale(1.1);
+			transition: .2s;
+			width: 300px;
+			height: 40vh;
+			border-radius: 20px;
+		}
 	</style>
 </head>
 <body>
@@ -31,7 +38,7 @@
 
 
 	<section class="sec1">
-			<img src="img/acomodacoes/Component4.png" alt="Primeira Foto" />
+			<img src="img/acomodacoes/comp.png" alt="Primeira Foto" />
 	</section>
 
 	<center><section class="content">

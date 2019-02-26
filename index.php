@@ -98,18 +98,9 @@
 					<p class="legenda-g wow jackInTheBox" data-wow-delay="1s">Sobre nós</p>
 				</div>
 
-				<p class="text-sobre">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<p class="text-sobre">
+					Somos uma rede de Hoteis que visamos o conforto e a segurança dos nossos clientes. O Landstar Hoteis oferece a você, apartamentos com ar condicionado, com uma vista perfeita, uma área de lazer com hidromassagem, academia, parque aquatico, piscinas para adulto e crianças, temos estacionamento privativo, Internet Wi-fi gratuita, dentre muitas outras vantagens.
+				</p>
 
 			</div>
 
