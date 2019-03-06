@@ -119,7 +119,7 @@ if (isset($_GET['id']) && isset($_GET['preco'])) {
 
 
             $ReservaDAO->ReservarQuarto($Reserva,$id);
-        }
+    }
 } else {
     echo "
         <script>

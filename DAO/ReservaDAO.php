@@ -22,6 +22,7 @@ class ReservaDAO
 		$preco = $reserva->getPreco();
 
 		$sql = $stmt->prepare("INSERT INTO reserva (nome,email,telefone,cpf,rg,id_quarto,qnt_dias,data_reserva,data_final,preco) VALUES (?,?,?,?,?,?,?,?,?,?)");
+
 		$sql->bindParam(1, $nome);
 		$sql->bindParam(2, $email);
 		$sql->bindParam(3, $tel);		
@@ -33,10 +34,8 @@ class ReservaDAO
 		$sql->bindParam(9, $data_f);	
 		$sql->bindParam(10, $preco);	
 
-		
-		$sql0 = $stmt->prepare("UPDATE quarto SET disponibilidade = 'n' WHERE id = '".$id."'"); 
 
-		if ($sql0->execute() && $sql->execute()) {
+		if ($sql->execute()) {
 			echo '
 				<script>
 		
@@ -52,11 +51,11 @@ class ReservaDAO
 					switch (value) {
 					 
 					    case "try":
-					      location.href = "boleto.php";
+					      location.href = "https://pagseguro.uol.com.br";
 					      break;
 					 
 					    default:
-					      location.href = "boleto.php";
+					      location.href = "https://pagseguro.uol.com.br";
 					}
 				});
 				

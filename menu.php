@@ -53,7 +53,6 @@
 				<li><a href="index.php">Home</a></li>
 				<li><a href="acomodacoes.php">Acomodações</a></li>
 				<li><a href="ambientes.php">Ambientes</a></li>
-				<li><a href="#sobre">Sobre</a></li>
 				<li><a class="active">Reservar</a></li>
 			</ul>
 		</nav>
