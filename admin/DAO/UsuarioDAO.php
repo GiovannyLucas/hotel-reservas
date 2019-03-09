@@ -1,5 +1,5 @@
 <?php
-		include("../conexao.php");
+		include("conexao.php");
 		include("../Models/Usuario.php");
 
 		class UsuarioDAO{
@@ -15,7 +15,31 @@
 				if ($stmt->rowCount() > 0) {
 					header("location:admin.php");				
 				}else{
-					header("location:index.php");
+					echo '
+					<script>
+				
+						swal("Usuário e/ou senha incorreto(s)!", "Redigite seu login e senha", "warning", {
+						  buttons: {
+						    defeat: {
+						    	text: "Ok!",
+						    	value: "try",
+						    },
+						  },
+						})
+						.then((value) => {
+							switch (value) {
+							 
+							    case "try":
+							      location.href = "index.php";
+							      break;
+							 
+							    default:
+							      location.href = "index.php";
+							}
+						});
+						
+					</script>
+					';
 				}
 			}
 

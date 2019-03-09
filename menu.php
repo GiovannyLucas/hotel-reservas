@@ -50,9 +50,9 @@
 
 		<nav class="active">
 			<ul>
-				<li><a href="index.php">Home</a></li>
-				<li><a href="acomodacoes.php">Acomodações</a></li>
-				<li><a href="ambientes.php">Ambientes</a></li>
+				<li><a href="index.php">Home <i class="fa fa-home"></i></a></li>
+				<li><a href="acomodacoes.php">Acomodações <i class="fa fa-bed"></i></a></li>
+				<li><a href="ambientes.php">Ambientes <i class="fa fa-tree"></i></a></li>
 				<li><a class="active">Reservar</a></li>
 			</ul>
 		</nav>

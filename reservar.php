@@ -2,7 +2,7 @@
     body {background: url(img/holiday-inn-resort-orlando-5288794619-4x3.jpg);}
     .formulario {
         background: rgba(255,255,255,.8);
-        width: 30%;
+        width: 50%;
         height: 90vh;
         padding: 10px 30px;
         border-radius: 30px;
@@ -36,6 +36,19 @@
         width: 100%;
         height: 300px;
     }
+
+    @media (max-width: 650px){
+        .formulario {
+            background: rgba(255,255,255,.8);
+            width: 80%;
+            height: 100vh;
+            padding: 10px 30px;
+            border-radius: 30px;
+            align-items: center;
+            justify-content: center;
+            transition: .2s;
+        }
+    }
 </style>
 <body>
 <?php include('menu.php'); ?>
@@ -49,7 +62,7 @@
                 <input type="text" name="nome" id="nome" required/>
             
             <br><br>
-            <label for="email">E-mail::</label><br>
+            <label for="email">E-mail:</label><br>
                 <input type="email" name="email" required>
             <br><br>
 

@@ -10,6 +10,8 @@ class ReservaDAO
 		$con = new Conexao();
 		$stmt = $con->Con();
 
+		$sql0 = $stmt->prepare("UPDATE quarto SET disponibilidade = 'n' WHERE id = '".$id."'");
+
 		$nome = $reserva->getNome();
 		$email = $reserva->getEmail();
 		$tel = $reserva->getTelefone();
@@ -35,7 +37,7 @@ class ReservaDAO
 		$sql->bindParam(10, $preco);	
 
 
-		if ($sql->execute()) {
+		if ($sql0->execute() && $sql->execute()) {
 			echo '
 				<script>
 		
@@ -56,6 +58,32 @@ class ReservaDAO
 					 
 					    default:
 					      location.href = "https://pagseguro.uol.com.br";
+					}
+				});
+				
+			</script>
+			';
+		} else {
+			echo '
+				<script>
+		
+				swal("CPF já cadastrado!", "CPF já utilizado por um usuário", "warning", {
+				  buttons: {
+				    defeat: {
+				    	text: "Ok!",
+				    	value: "try",
+				    },
+				  },
+				})
+				.then((value) => {
+					switch (value) {
+					 
+					    case "try":
+					      
+					      break;
+					 
+					    default:
+					      
 					}
 				});
 				

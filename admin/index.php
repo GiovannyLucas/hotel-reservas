@@ -1,3 +1,26 @@
+	<?php
+
+	if(isset($_POST['user']) && isset($_POST['senha'])){
+
+		session_start();
+
+
+		include('DAO/UsuarioDAO.php');
+		include('Models/Usuario.php');
+
+		$usuarioDAO = new UsuarioDAO();
+		$usuario = new Usuario();
+
+		$usuario->setUsuario($_POST['user']);
+		$usuario->setSenha($_POST['senha']);
+
+		$_SESSION['admin'] = $_POST['user'];
+
+		$usuarioDAO->Logar($usuario);
+	}
+		
+
+	?>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -38,30 +61,6 @@
 						</div>			
 					</div>
 				</form>
-
-				<?php
-
-				if(isset($_POST['user']) && isset($_POST['senha'])){
-
-					session_start();
-
-
-					require('DAO/UsuarioDAO.php');
-					require('Models/Usuario.php');
-
-					$usuarioDAO = new UsuarioDAO();
-					$usuario = new Usuario();
-
-					$usuario->setUsuario($_POST['user']);
-					$usuario->setSenha($_POST['senha']);
-
-					$_SESSION['admin'] = $_POST['user'];
-
-					$usuarioDAO->Logar($usuario);
-				}
-					
-
-				?>
 
 			</div>		
 		</div>	

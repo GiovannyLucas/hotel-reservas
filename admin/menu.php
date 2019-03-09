@@ -1,3 +1,16 @@
+	<?php
+		session_start();
+
+		if (!isset($_SESSION['admin'])) {
+			header('location:index.php');
+		}
+
+		if (isset($_GET['sair'])) {
+			unset($_SESSION['admin']);
+			session_destroy();
+			header('location:index.php');
+		}
+	?>	
 	<title>Landstar hotels - Área ADM</title>
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,11 +36,8 @@
 		$(window).on('scroll', function(){
 			if($(window).scrollTop()){
 				$('header').addClass('blue');
-				$('header').addClass('top');
-
 			} else {
 				$('header').removeClass('blue');
-				$('header').removeClass('top');
 			}
 		});
 
@@ -77,17 +87,3 @@
 			})
 		})
 	</script>
-
-	<?php
-		session_start();
-
-		if (!isset($_SESSION['admin'])) {
-			header('location:index.php');
-		}
-
-		if (isset($_GET['sair'])) {
-			unset($_SESSION['admin']);
-			session_destroy();
-			header('location:index.php');
-		}
-	?>
